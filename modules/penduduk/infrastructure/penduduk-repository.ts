@@ -6,6 +6,11 @@
   FamilyId,
 } from "../domain";
 
+/**
+ * Persistence contract for the Penduduk domain.
+ *
+ * Database-specific implementation must remain behind this interface.
+ */
 export interface PendudukRepository {
   findCitizenById(
     id: CitizenId,
